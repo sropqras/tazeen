@@ -15,6 +15,7 @@ import os
 import zipfile
 from dataclasses import dataclass
 from io import StringIO
+from xml.sax.saxutils import escape as xml_escape
 
 import numpy as np
 from stl import mesh
@@ -223,7 +224,7 @@ def _write_model_xml(placed_parts, out_stream):
         uniq, inv = np.unique(q, axis=0, return_inverse=True)
         uniq_f = uniq.astype(np.float64) / 1000.0
         tris = inv.reshape(-1, 3)
-        w.write(f'  <object id="{oid}" type="model" name="{p.name}">\n')
+        w.write(f'  <object id="{oid}" type="model" name="{xml_escape(p.name, {chr(34): "&quot;"})}">\n')
         w.write('   <mesh>\n    <vertices>\n')
         for v in uniq_f:
             w.write(f'     <vertex x="{v[0]:.4f}" y="{v[1]:.4f}" z="{v[2]:.4f}"/>\n')

@@ -1,0 +1,105 @@
+[
+  {
+    "idx": 1,
+    "file": "bed_1.3mf",
+    "parts": 1,
+    "footprint": [
+      219.4,
+      131.4,
+      121.0
+    ],
+    "margin_x": 0.3,
+    "margin_y": 44.3,
+    "info": [
+      "L\u00b7c01        219.4 \u00d7  131.4 \u00d7 121.0 mm"
+    ],
+    "warn": [
+      "only 0.3 mm X clearance \u2014 bed edge risk"
+    ],
+    "top": "bed_1_top.png",
+    "side": "bed_1_side.png"
+  },
+  {
+    "idx": 2,
+    "file": "bed_2.3mf",
+    "parts": 1,
+    "footprint": [
+      199.5,
+      128.2,
+      107.4
+    ],
+    "margin_x": 10.3,
+    "margin_y": 45.9,
+    "info": [
+      "U\u00b7c00        199.5 \u00d7  128.2 \u00d7 107.3 mm"
+    ],
+    "warn": [],
+    "top": "bed_2_top.png",
+    "side": "bed_2_side.png"
+  },
+  {
+    "idx": 3,
+    "file": "bed_3.3mf",
+    "parts": 3,
+    "footprint": [
+      174.1,
+      124.7,
+      82.4
+    ],
+    "margin_x": 22.9,
+    "margin_y": 47.6,
+    "info": [
+      "L\u00b7c04         97.2 \u00d7  124.7 \u00d7  82.4 mm",
+      "U\u00b7c02         22.7 \u00d7  117.1 \u00d7  20.9 mm",
+      "L\u00b7c02         46.2 \u00d7  113.4 \u00d7  44.5 mm"
+    ],
+    "warn": [],
+    "top": "bed_3_top.png",
+    "side": "bed_3_side.png"
+  },
+  {
+    "idx": 4,
+    "file": "bed_4.3mf",
+    "parts": 6,
+    "footprint": [
+      203.5,
+      186.4,
+      62.8
+    ],
+    "margin_x": 8.2,
+    "margin_y": 16.8,
+    "info": [
+      "U\u00b7c06         84.5 \u00d7  103.6 \u00d7  40.1 mm",
+      "U\u00b7c07         73.7 \u00d7   91.7 \u00d7  62.8 mm",
+      "U\u00b7c01         53.0 \u00d7   78.7 \u00d7  40.0 mm",
+      "L\u00b7c06         64.0 \u00d7   70.5 \u00d7  54.8 mm",
+      "U\u00b7c03         37.3 \u00d7   65.7 \u00d7  35.9 mm",
+      "L\u00b7c00         33.1 \u00d7   60.1 \u00d7  14.6 mm"
+    ],
+    "warn": [],
+    "top": "bed_4_top.png",
+    "side": "bed_4_side.png"
+  },
+  {
+    "idx": 5,
+    "file": "bed_5.3mf",
+    "parts": 5,
+    "footprint": [
+      175.5,
+      72.2,
+      36.1
+    ],
+    "margin_x": 22.2,
+    "margin_y": 73.9,
+    "info": [
+      "U\u00b7c04         47.9 \u00d7   45.3 \u00d7  34.3 mm",
+      "L\u00b7c03         60.4 \u00d7   37.1 \u00d7  36.1 mm",
+      "U\u00b7c08        103.1 \u00d7   22.9 \u00d7  19.2 mm",
+      "L\u00b7c05         59.2 \u00d7   14.9 \u00d7  14.8 mm",
+      "U\u00b7c05         64.4 \u00d7   14.9 \u00d7  14.9 mm"
+    ],
+    "warn": [],
+    "top": "bed_5_top.png",
+    "side": "bed_5_side.png"
+  }
+]

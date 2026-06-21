@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tazeen — print plan (5 beds, Ender 3 V3 SE)</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 24px;
+         font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         background: #11141b; color: #d8dde8; max-width: 1100px; margin-inline: auto; }
+  header { border-bottom: 1px solid #2c3140; padding-bottom: 14px; margin-bottom: 22px; }
+  h1 { margin: 0 0 4px 0; font-size: 22px; color: #e8ecf5; }
+  header p { margin: 4px 0; color: #8c96ac; }
+  .stats { display: flex; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
+  .stat { background: #1b1f2a; padding: 10px 14px; border-radius: 8px; border: 1px solid #2c3140; min-width: 100px; }
+  .stat b { display: block; font-size: 18px; color: #e8ecf5; }
+  .stat span { color: #8c96ac; font-size: 12px; }
+  section.bed { background: #161a23; border: 1px solid #2c3140; border-radius: 10px;
+                  padding: 18px; margin-bottom: 22px; }
+  section.bed h2 { margin: 0 0 10px 0; font-size: 16px; color: #e8ecf5; }
+  .meta { color: #8c96ac; font-weight: normal; font-size: 13px; }
+  .views { display: flex; gap: 16px; flex-wrap: wrap; }
+  figure { margin: 0; flex: 1 1 380px; min-width: 0; }
+  figure img { width: 100%; border-radius: 6px; border: 1px solid #2c3140; display: block; }
+  figcaption { font-size: 12px; color: #8c96ac; padding: 4px 2px 0; }
+  pre.parts { background: #0d1017; border: 1px solid #2c3140; border-radius: 6px;
+               padding: 10px 14px; font-size: 12px; overflow-x: auto;
+               color: #c5cde0; white-space: pre; }
+  .warn { background: #3a2814; border: 1px solid #b07b3a; color: #ffd9a8;
+            padding: 8px 12px; border-radius: 6px; margin-bottom: 10px; font-size: 13px; }
+  .dl a { color: #6fa8ff; text-decoration: none; font-size: 13px; }
+  .dl a:hover { text-decoration: underline; }
+  footer { color: #6a7383; font-size: 12px; text-align: center; margin-top: 24px; }
+</style>
+</head><body>
+<header>
+  <h1>Tazeen — Arabic sign print plan</h1>
+  <p>Two STLs split into <b>16 connected parts</b>, laid flat &amp; packed onto <b>5 Ender 3 V3 SE beds</b> (220 × 220 × 250 mm).</p>
+  <div class="stats">
+    <div class="stat"><b>5</b><span>beds total</span></div>
+    <div class="stat"><b>16</b><span>parts</span></div>
+    <div class="stat"><b>121 mm</b><span>tallest part Z</span></div>
+    <div class="stat"><b>220 × 220</b><span>bed (mm)</span></div>
+  </div>
+</header>
+
+        <section class="bed">
+          <h2>Bed 1 <span class="meta">— 1 part · footprint 219.4 × 131.4 × 121.0 mm · margins 0.3 / 44.3 mm</span></h2>
+          <div class="warn">⚠ only 0.3 mm X clearance — bed edge risk</div>
+          <div class="views">
+            <figure><img src="bed_1_top.png" alt="bed 1 top"><figcaption>Top view</figcaption></figure>
+            <figure><img src="bed_1_side.png" alt="bed 1 side"><figcaption>Side view (X–Z)</figcaption></figure>
+          </div>
+          <pre class="parts">L·c01        219.4 ×  131.4 × 121.0 mm</pre>
+          <p class="dl"><a href="bed_1.3mf" download>⬇ bed_1.3mf</a></p>
+        </section>
+        <section class="bed">
+          <h2>Bed 2 <span class="meta">— 1 part · footprint 199.5 × 128.2 × 107.4 mm · margins 10.3 / 45.9 mm</span></h2>
+          
+          <div class="views">
+            <figure><img src="bed_2_top.png" alt="bed 2 top"><figcaption>Top view</figcaption></figure>
+            <figure><img src="bed_2_side.png" alt="bed 2 side"><figcaption>Side view (X–Z)</figcaption></figure>
+          </div>
+          <pre class="parts">U·c00        199.5 ×  128.2 × 107.3 mm</pre>
+          <p class="dl"><a href="bed_2.3mf" download>⬇ bed_2.3mf</a></p>
+        </section>
+        <section class="bed">
+          <h2>Bed 3 <span class="meta">— 3 parts · footprint 174.1 × 124.7 × 82.4 mm · margins 22.9 / 47.6 mm</span></h2>
+          
+          <div class="views">
+            <figure><img src="bed_3_top.png" alt="bed 3 top"><figcaption>Top view</figcaption></figure>
+            <figure><img src="bed_3_side.png" alt="bed 3 side"><figcaption>Side view (X–Z)</figcaption></figure>
+          </div>
+          <pre class="parts">L·c04         97.2 ×  124.7 ×  82.4 mm<br>U·c02         22.7 ×  117.1 ×  20.9 mm<br>L·c02         46.2 ×  113.4 ×  44.5 mm</pre>
+          <p class="dl"><a href="bed_3.3mf" download>⬇ bed_3.3mf</a></p>
+        </section>
+        <section class="bed">
+          <h2>Bed 4 <span class="meta">— 6 parts · footprint 203.5 × 186.4 × 62.8 mm · margins 8.2 / 16.8 mm</span></h2>
+          
+          <div class="views">
+            <figure><img src="bed_4_top.png" alt="bed 4 top"><figcaption>Top view</figcaption></figure>
+            <figure><img src="bed_4_side.png" alt="bed 4 side"><figcaption>Side view (X–Z)</figcaption></figure>
+          </div>
+          <pre class="parts">U·c06         84.5 ×  103.6 ×  40.1 mm<br>U·c07         73.7 ×   91.7 ×  62.8 mm<br>U·c01         53.0 ×   78.7 ×  40.0 mm<br>L·c06         64.0 ×   70.5 ×  54.8 mm<br>U·c03         37.3 ×   65.7 ×  35.9 mm<br>L·c00         33.1 ×   60.1 ×  14.6 mm</pre>
+          <p class="dl"><a href="bed_4.3mf" download>⬇ bed_4.3mf</a></p>
+        </section>
+        <section class="bed">
+          <h2>Bed 5 <span class="meta">— 5 parts · footprint 175.5 × 72.2 × 36.1 mm · margins 22.2 / 73.9 mm</span></h2>
+          
+          <div class="views">
+            <figure><img src="bed_5_top.png" alt="bed 5 top"><figcaption>Top view</figcaption></figure>
+            <figure><img src="bed_5_side.png" alt="bed 5 side"><figcaption>Side view (X–Z)</figcaption></figure>
+          </div>
+          <pre class="parts">U·c04         47.9 ×   45.3 ×  34.3 mm<br>L·c03         60.4 ×   37.1 ×  36.1 mm<br>U·c08        103.1 ×   22.9 ×  19.2 mm<br>L·c05         59.2 ×   14.9 ×  14.8 mm<br>U·c05         64.4 ×   14.9 ×  14.9 mm</pre>
+          <p class="dl"><a href="bed_5.3mf" download>⬇ bed_5.3mf</a></p>
+        </section>
+<footer>Generated by render_beds.py · open any bed_<i>N</i>.3mf in PrusaSlicer to slice.</footer>
+</body></html>
